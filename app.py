@@ -226,16 +226,13 @@ with tab_para:
         df_para = pd.DataFrame({"Tiempo (s)": np.round(t_arr_p, 2), "Distancia X (m)": np.round(x_arr_p, 2), "Altura Y (m)": np.round(y_arr_p, 2)})
         st.dataframe(df_para, use_container_width=True)
         st.download_button("Descargar Tabla CSV", convertir_df(df_para), "datos_parabolico.csv", "text/csv", key="csv_para") 
-        <!-- Firma de autoría añadida de forma segura al final del documento -->
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    const footer = document.createElement('footer');
-    footer.innerHTML = `
-      <div style="text-align: center; margin-top: 40px; padding: 15px; background-color: #f1f1f1; border-top: 1px solid #ccc; font-family: Arial, sans-serif; font-size: 13px; color: #444;">
+       st.markdown(
+    """
+    <hr>
+    <div style="text-align: center; margin-top: 40px; padding: 15px; font-family: Arial, sans-serif; font-size: 13px; color: #444;">
         <p><strong>Proyecto Final de Física - Cinemática</strong></p>
-        <p>Desarrollado por: <strong>Luis Emilio Colque Lopez</strong> | Ingeniería Mecánica Automotriz y Agroindustrial - UTEPSA[cite: 1]</p>
-      </div>
-    `;
-    document.body.appendChild(footer);
-  });
-</script>
+        <p>Desarrollado por: <strong>Luis Emilio Colque Lopez</strong> | Ingeniería Mecánica Automotriz y Agroindustrial - UTEPSA</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
