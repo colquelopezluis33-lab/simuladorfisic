@@ -64,7 +64,7 @@ def configurar_grafica(ax, xlabel, ylabel, title):
 
 # Titulo Principal
 st.markdown("<h1>Simulador Interactivo de Cinemática Aplicada</h1>", unsafe_allow_html=True)
-st.markdown("<p style='font-size: 18px; color: #7f8c8d;'>Desarrrollado en UTEPSA "pongame 100 inge.</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size: 18px; color: #7f8c8d;'>Desarrrollado en UTEPSA pongame 100 inge :( .</p>", unsafe_allow_html=True)
 st.markdown("---")
 
 # Creacion de Pestañas
