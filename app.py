@@ -63,7 +63,7 @@ def configurar_grafica(ax, xlabel, ylabel, title):
     ax.set_facecolor('#ffffff')
 
 # Titulo Principal
-st.markdown("<h1>Simulador Interactivo de Cinemática Aplicada</h1>", unsafe_allow_html=True)
+st.markdown("<h1>inge pongame 100</h1>", unsafe_allow_html=True)
 st.markdown("<p style='font-size: 18px; color: #7f8c8d;'>Desarrrollado en UTEPSA</p>", unsafe_allow_html=True)
 st.markdown("---")
 
